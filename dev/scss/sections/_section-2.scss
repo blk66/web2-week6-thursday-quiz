@@ -1,0 +1,40 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+    display: grid;
+    grid-template-columns: "section-2-container legs";
+    @include md{
+        grid-template-rows:"section-2-container legs" ;
+    }
+        
+   #section-2-container{
+       grid-area: section-2-container ;
+       padding: 15px;
+   }
+   
+    #legs{
+        background-image: url("../img/section-2/legs.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+        grid-area: legs;
+
+        @include md{
+            grid-area: section-2-image;
+            height: 246px ;
+        }
+
+        @include lg{
+            height: 600px;
+        }
+
+        
+    }    
+  
+}
+    
+
+
+
+

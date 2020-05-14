@@ -2,8 +2,40 @@
     Section 1
 ============= */
 #section-1{
-    .grid-content{
-        
-    }
+ 
+    background-image: url('../img/section-1/waves.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    height: 560px;
+    display: grid;
+
+    @include md{
+        height: 694px ;
+   }
+
+   @include xl{
+       height: 959px ;
+   }
+
+   #section-1-container{
+
+
+   }
+
+   #section-1-text{
+    grid-area: section-1-text;
+    padding: 40px;
+
+        h1{
+            color: $blue;
+        }
+        p{
+            color: $d-blue;
+        }
+   }
+   #section-1-circle{
+    grid-area: section-1-circle;
+   } 
 
 }
